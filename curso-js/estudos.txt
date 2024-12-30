@@ -1,0 +1,40 @@
+JS
+
+'=' recebe
+= null - nulo
+
+let - variavel
+
+nome de variável = identificador
+- pode começar com letra, $, _
+- não pode começar com número
+- pode usar letras ou números
+- pode usar acentos e símbolos
+- não pode conter espaços
+- não pode usar palavras reservadas
+
++ = concatenação
+
+// number + number adição
+// number + string concatenação
+
+para transformar string em number:
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+para transformar number em string:
+String(n)
+n.toString()
+
+ex: s = 'JavaScript'
+s.lenght //qtos caracteres a string tem
+s.toUpperCase() //todas maiúsculas
+s.toLowerCase() //todas minúsculas
+
+Formatar números
+var n1 = 1545.5
+
+n1.toFixed(2) = 1545.50
+n1.toFixed(2).replace(".", ",") = 1545,50
+n1.toLacaleString('pt-BR', {style: 'currency', currency: 'BRL'})
