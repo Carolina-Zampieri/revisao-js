@@ -39,6 +39,7 @@ n1.toFixed(2) = 1545.50
 n1.toFixed(2).replace(".", ",") = 1545,50
 n1.toLacaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
+-----------------------------------------------------------
 
 ordem precedência
 ()
@@ -117,3 +118,48 @@ Ternário
 ? :
 teste ? true : false
 ex: média >= 7.0 ? "Aprovado" : "Reprovado"
+
+-------------------------------------------------------------
+
+DOM
+Document Object Model (modelo de objetos para documentos)
+Conjunto de objetos dentro do navegador que dá acesso aos componentes internos do site
+
+Árvore DOM
+         window (janela do navegador)
+      /     |    \
+location document history (objetos)
+            |
+           html (parent)
+         /      \
+    head          body (child)
+    /  \        /  | |  \
+meta   title   h1  p p  div
+                     |
+                   strong
+
+
+Selecionando os elementos à partir de métodos:
+
+- Marca 
+getElementsByTagName()
+seleciona mais de 1 objeto "[]"
+
+- ID
+getElementById()
+
+- nome
+getElementsByName()
+seleciona mais de 1 objeto "[]"
+
+- Classe
+getElementsByClassName()
+seleciona mais de 1 objeto "[]"
+
+- Seletor
+querySelector()
+querySelectorAll()
+
+
+*toda div é representada por #
+*toda class é representada por .
