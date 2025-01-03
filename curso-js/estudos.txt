@@ -163,3 +163,36 @@ querySelectorAll()
 
 *toda div é representada por #
 *toda class é representada por .
+
+
+Eventos DOM
+Tudo o que pode acontecer
+podem ser configurados na parte do html o JavaScript
+
+ex html:
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+Exs:
+- Eventos de mouse
+    mouseenter
+    mousemove
+    mousedown
+    mouseup
+    click
+    mouseout
+    etc..
+
+Função ou funcionalidade
+Conjunto de códigos (ou linhas) que serão executadas
+só quando o evento acontecer
+
+1 passo:
+colocar dentro de um bloco {}
+e nomear como uma function antes do bloco
+para que o método possa funcionar precisar dar um nome - nome()
+opcionalmente dentro dos () pode passar parametros
+
+ex: 
+function ação() {
+
+}
