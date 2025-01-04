@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validação de Nacionalidade</h1>
+    Preencha com o seu país de origem: <input type="text" id="txtnacionalidade">
+    <input type="button" value="Enviar" onclick="validar()">
+    <div id="resposta"></div>
+    <script>
+        function validar() {
+            var txtn = window.document.querySelector('input#txtnacionalidade')
+            var res = window.document.querySelector('div#resposta')
+            res.innerHTML = `<p>Seu país de origem é <strong>${txtn.value}</strong>.<p>`
+            if (txtn.value == 'Brasil') {
+                res.innerHTML += `Você é brasileiro.`
+            } else {
+                res.innerHTML += `Você é estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>

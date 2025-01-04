@@ -196,3 +196,23 @@ ex:
 function ação() {
 
 }
+
+-----------------------------------------------------
+
+Condições
+
+if (condição) {
+    true
+} else {
+    false
+}
+
+Tipos de condição
+
+Condição simples
+if (condição) {            if (condição) {       
+    true                       true
+}                          } else {
+                               false
+                           }
+

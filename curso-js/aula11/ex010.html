@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA</title>
+</head>
+<body>
+    <h1>Validação candidato</h1>
+    Altura candidato: <input type="number" name="txtalt" id="txtalt">
+    <input type="button" value="verificar" onclick="validar()">
+    <div id="res"></div>
+    <script>
+        function validar() {
+            var txta = window.document.querySelector('input#txtalt')
+            var res = window.document.querySelector('div#res')
+            var val = Number(txta.value)
+            res.innerHTML = `<p>Sua altura é <strong>${val} metros</strong><p>`
+            if (val < 1.57) {
+                res.innerHTML += `Infelizmente você não está apto para entrar no programa.`
+            }
+            res.innerHTML += `<p>A altura mínima para entrar no programa é de 1.57 metros.</p>`
+        }
+    </script>
+</body>
+</html>
