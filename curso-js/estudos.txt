@@ -207,12 +207,44 @@ if (condição) {
     false
 }
 
-Tipos de condição
+*Tipos de condição*
 
-Condição simples
+Condição simples           Condição Composta
 if (condição) {            if (condição) {       
     true                       true
 }                          } else {
                                false
                            }
 
+
+Condições Aninhadas
+(uma condição dentro da outra)
+if (condição 1) {
+    bloco 1
+} else {
+    if (condição) {
+        bloco 2
+    } else {
+        bloco 3
+    }
+}
+
+
+Condição Multipla
+(possibilidade de valores fixos)
+
+Testa a expressão
+Só funciona com números inteiros e caracteres
+
+switch (expressão) {
+    case valor 1:
+        bloco 1
+        break (sempre obrigatório no final de cada case)
+    case valor 2:
+        bloco 2
+        break (sempre obrigatório no final de cada case)
+    case valor 3:
+        bloco 3
+        break (sempre obrigatório no final de cada case)
+    default:
+}
