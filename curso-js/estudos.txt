@@ -248,3 +248,58 @@ switch (expressão) {
         break (sempre obrigatório no final de cada case)
     default:
 }
+
+---------------------------------------------------
+
+Repetições
+Começa no primeiro comando passando por todos para concluir a tarefa
+
+function comerPizza() {
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+
+*Sequência*
+começa do primeiro ponto e vai até o último em sequência
+A -> B -> c
+
+*Repetições*
+
+Laços
+Enquanto a condição for verdadeira, passa por ela, faz um looping e volta para o começo e testa novamente
+Quando for negativa passa direto e não entra na condição
+
+Tipos:
+Estrutura de repetição com teste lógico no início
+Primeiro testa, depois executa o bloco
+function comerPizza() {
+    while (condição()) {
+        comerFatia()
+    }
+}
+
+Estrutura de repetição com teste lógico no final
+Primeiro executa o bloco, depois testa
+do {
+
+} while (condição) {
+
+}
+
+
+Estrurura de repetição com variável de controle
+Inicia, faz o teste lógico, se for verdadeiro, executa o bloco, volta e incrementa
+(enquanto for verdadeiro, acontece o looping)
+Quando for falso, encerra
+
+for (início; teste; Incremento) {
+    
+}
+
+
