@@ -302,4 +302,79 @@ for (início; teste; Incremento) {
     
 }
 
+-------------------------------------------------------
+
+Variáveis Compostas
+Capaz de armazenar vários valores em uma mesma estrutura
+(Não perde um valor ao armazenar outro)
+
+declara uma variável composta (array, vetor)
+que é composto por elementos 
+que é composto por valor e chame de identificação
+
+ex:
+let num = [5, 8, 2]
+
+Para acrescentar valor
+num[5] = 6
+
+Para acrescentar na última posição
+num.push(7)
+
+Para saber o tamanho
+num.length 
+(length não é método, é atributo)
+
+Para colocar os elementos em ordem crescente
+num.sort()
+
+Código tradicional:
+for(let pos = 0; pos < num.length; pos++){
+    console.log(num[pos])
+}
+
+Código simplificado:
+for(let pos (índice) in num (nome da variável commposta)){ -> p/ cada posição em num
+    console.log(num[pos]) -> mostra num[pos]
+}
+
+
+Buscar valores dentro do vetor
+num.indexOf(7) -> procura no vetor onde está o valor 7
+
+ex:
+let pos = num.indexOf(8)
+console.log(`O valor está na posição ${pos}`)
+
+quando retorna -1:
+significa que pesquisou e não encontrou nenhuma ocorrência dentro do vetor
+
+
+------------------------------------------------------------
+
+Funções
+São ações executadas assim que são chamadas ou em decorrência de um evento
+Uma funnção pode receber parâmetros e retornar um resoltado
+
+Toda função precisa ter:
+uma chamada
+e pode ter:
+conjunto Parâmetro (de entrada)
+uma Ação
+um retorno
+
+function ação(param) {
+    return resultado -> retorno / -> ação (todo o bloco)
+}
+ação(5) -> chamada
+
+ex:
+function parimp(n) {
+    if(n % 2 == 0){
+        return 'par'
+    } else {
+        return 'ímpar'
+    }
+}
+let res = parimp(11) -> chamada com parâmetro
 
