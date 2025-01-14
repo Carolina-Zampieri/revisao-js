@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1>Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div>
+    <style>
+        body {
+            background: darkviolet;
+            color: white;
+            font: normal 14pt Calibri;
+        }
+    </style>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[0];
+        window.document.write(p1.innerText) //texto que está dentro do 1o paragráfo
+        
+        var p2 = window.document.getElementsByTagName("p")[1];
+        p2.style.color = "purple";
+        
+        var div = window.document.getElementById('msg');
+        div.style.backgroundColor = "purple";
+        //div.innerText = "Agardando...";
+
+        var div = window.document.querySelector('div#msg');
+        div.style.color = "pink";
+    </script>
+</body>
+</html>
