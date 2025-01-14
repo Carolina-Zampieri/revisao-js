@@ -1,1 +1,3 @@
-# revisao-js
+# Revisão de JavaScript
+
+Curso em vídeo
